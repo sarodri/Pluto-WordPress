@@ -1,0 +1,32 @@
+/*
+Theme name: Peluqueria Pluto
+Version: 1.0
+Description: Sitio Web de Peluqueria canina Pluto
+Author: Sandra Ropero
+Authon URI: https://github.com/sarodri
+License: GNU General Public Licence v2 or later
+License: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+html {
+    min-height: 100%;
+    position: relative;
+}
+body{
+    padding-bottom: 10%;
+    background-color:antiquewhite;
+}
+a,h1,h2,h3,h4,li,p,span,ul{
+    font-family:Montserrat
+}
+.attachment-large{
+    max-width:100%;
+    height:auto!important
+}
+h1,h2{
+    margin:50px 0;
+    font-weight: 900;
+}
+ul{
+    margin-bottom: 0px;
+}
