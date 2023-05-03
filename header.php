@@ -13,8 +13,12 @@
             <div class="col-3" id="logo">
                 <img src="<?php echo get_template_directory_uri()?>/assets/img/pluto.png" alt="logo">
             </div>
-            <div class="col-9">
-                <nav>
+            <div class="col-4">
+                <h2>BIENVENIDO A PELUQUERÍA CANINA Y SPA PLUTO</h2>
+               
+            </div>
+            <div class="col-4">
+                 <nav>
                     <?php wp_nav_menu( array(
                         'theme_location' => 'top_menu', 
                         'menu_class' => 'menu-principal', 

@@ -9,6 +9,10 @@ function init_template(){
 
 add_action('after_setup_theme', 'init_template');
 
+function my_theme_styles() {
+    wp_enqueue_style( 'dashicons' );
+    }
+
 function assets(){
 
     wp_register_style( 'bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css', '', '5.3.0', 'all');
