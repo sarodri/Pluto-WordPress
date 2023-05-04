@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </head>
 <body>    
 <header>
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-3" id="logo">
+            <div class="col-2" id="logo">
                 <img src="<?php echo get_template_directory_uri()?>/assets/img/pluto.png" alt="logo">
             </div>
-            <div class="col-4">
-                <h2>BIENVENIDO A PELUQUERÍA CANINA Y SPA PLUTO</h2>
-               
-            </div>
-            <div class="col-4">
+            
+            <div class="col-10">
                  <nav>
                     <?php wp_nav_menu( array(
                         'theme_location' => 'top_menu', 
