@@ -51,3 +51,28 @@ add_action( 'wp_enqueue_scripts', 'dcms_load_dashicons_front_end' );
 function dcms_load_dashicons_front_end() {
 	wp_enqueue_style( 'dashicons' );
 }
+
+function tratamientos_type(){
+    $label1 = array(
+        'name' => 'Tratamientos',
+        'singular_name' => 'Tratamiento',
+        'menu_name' => 'Tratamientos'
+    );
+    $args = array(
+        'label' => 'Tratamientos',
+        'description' => 'Tratamientos y servicios',
+        'labels' =>  $label1,
+        'supports' => array('title', 'editor', 'thumbnail', 'revision'),
+        'public' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+        'menu_icon' => 'dashicons-category',
+        'can_export' => true,
+        'publicly_querable' => true,
+        'rewrite' => true,
+        'show_in_rest' => true
+
+    );
+    register_post_type( 'tratamiento', $args);
+};
+add_action('init', 'tratamientos_type' );

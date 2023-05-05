@@ -23,7 +23,7 @@ a,h1,h2,h3,h4,li,p,span,ul{
     max-width:100%;
     height:auto!important
 }
-h1,h2{
+h1{
     margin:50px 0;
     font-weight: 900;
 }
@@ -36,9 +36,9 @@ ul{
     border-radius: 50%;
     margin: 10px;
 }
-header {
+/* header {
     background-color:#f09927;
-}
+} */
 header h2{
     font-family: bradley hand!important;
     color: white;
@@ -59,7 +59,7 @@ header nav li {
     margin-right: 30px;
 }
 header nav li a{
-    color: rgb(252, 252, 252);
+    color:#f09927;;
     font-weight:300;
     text-decoration: none;
 }
@@ -94,4 +94,19 @@ footer p{
     font-size: 30px;
     color: white;
     margin-right: 10px;
+}
+#img-tratamiento figure img{
+    border-radius: 20px;
+}
+.nosotros img{
+    width: 500px;
+    height: 300px;
+    align-self: flex-end;
+}
+.nosotros .col-6{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin: 0 0 10px 0!important;
 }
