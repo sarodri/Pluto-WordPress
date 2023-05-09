@@ -51,6 +51,14 @@ add_action( 'wp_enqueue_scripts', 'dcms_load_dashicons_front_end' );
 function dcms_load_dashicons_front_end() {
 	wp_enqueue_style( 'dashicons' );
 }
+add_action("wp_enqueue_scripts", "dcms_insertar_google_fonts");
+
+function dcms_insertar_google_fonts(){
+    $url1 = "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap";
+    wp_enqueue_style('google_fonts', $url1);
+    $url2 = "https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap";
+    wp_enqueue_style('google_fonts', $url2);
+ }
 
 function tratamientos_type(){
     $label1 = array(

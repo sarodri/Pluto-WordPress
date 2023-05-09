@@ -14,10 +14,10 @@ html {
 }
 body{
     padding-bottom: 10%;
-    background-color:antiquewhite;
+    background-color:white;
 }
-a,h1,h2,h3,h4,li,p,span,ul{
-    font-family:Montserrat
+a,h1,h2,h3,h4,p,span{
+    font-family: 'Josefin Sans', sans-serif;
 }
 .attachment-large{
     max-width:100%;
@@ -28,21 +28,9 @@ h1{
     font-weight: 900;
 }
 ul{
-    margin-bottom: 0px;
+    margin-bottom: 0px;  
 }
-.col-2#logo img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin: 10px;
-}
-/* header {
-    background-color:#f09927;
-} */
-header h2{
-    font-family: bradley hand!important;
-    color: white;
-}
+
 header .container-menu ul{
     display: flex;
     align-items: center;
@@ -52,9 +40,12 @@ header .container-menu ul{
 header nav {
     list-style:none;
     padding:0 15px; 
+  
 }
 header nav li {
     text-transform:uppercase;
+    font-size: 22px;
+    width: auto;
     display:inline;
     margin-right: 30px;
 }
@@ -62,6 +53,7 @@ header nav li a{
     color:#f09927;;
     font-weight:300;
     text-decoration: none;
+    font-family: 'Indie Flower', cursive;
 }
 header nav li a:hover{
     color:rgb(5, 5, 5);
@@ -79,6 +71,11 @@ footer{
 footer p{
     color: rgb(252, 252, 252);  
     font-size: 20px;
+}
+.logo img{
+    border-radius: 40px;
+    width: 120px;
+    height: 120px;
 }
 .links{
     display: flex;
