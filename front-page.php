@@ -1,17 +1,20 @@
 <?php get_header(); ?>
 
 <main class="container my-5">
-    <div class="row my-5 nosotros d-flex">
-        <div class="col-6 d-flex justify-content-flex-start">
+    <div class="my-5 nosotros d-flex">
+        <div class="nosotros-desc">
             <h2>Sobre nosotros</h2>
-             <?php if(have_posts(  )){
-             while(have_posts(  )){
+            <p>
+                <?php if(have_posts(  )){
+                while(have_posts(  )){
                 the_post(  ); ?>
                 <?php the_content( ); ?>
-        <?php   }
-            }?>
+                <?php   }
+                }?>
+            </p>
+             
         </div>
-        <div class="col-6">
+        <div class="nosotros-img">
         <img src="<?php echo get_template_directory_uri()?>/assets/img/fachada.jpeg" alt="sobre-nosotros">
         </div>
 

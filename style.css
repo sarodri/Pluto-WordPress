@@ -18,6 +18,7 @@ body{
 }
 a,h1,h2,h3,h4,p,span{
     font-family: 'Josefin Sans', sans-serif;
+
 }
 .attachment-large{
     max-width:100%;
@@ -104,9 +105,32 @@ footer p{
     height: 300px;
     align-self: flex-end;
 }
-.nosotros .col-6{
+.nosotros{
+    margin: 0;
+}
+.nosotros-desc{
     display: flex;
     flex-direction: column;
+    flex: 1;
+    background-color:sandybrown;
+    padding-bottom: 95px;
+    padding-left: 140px;
+    padding-right: 180px;
+    padding-top: 62px;
+}
+.nosotros-desc p{
+    font-size: 18px;
+}
+.nosotros-img{
+    margin-left: -122px;
+    margin-top: 162px;
+    margin-right: 0;
+    padding-left: 60px;
+    padding-top: 64px;
+    padding-bottom: 148px;
+    padding-right: 15px;
+    width: 536px;
+    
 }
 h2{
     margin: 0 0 10px 0!important;

@@ -17,9 +17,11 @@ function assets(){
 
     wp_register_style( 'bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css', '', '5.3.0', 'all');
 
-    wp_register_style( 'montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap', '' , '1.0', 'all' );
+    wp_register_style( 'josefine', "https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap", '' , '1.0', 'all' );
+    wp_register_style( 'indie', "https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap", '' , '1.0', 'all' );
+    wp_register_style( 'kalam', "https://fonts.googleapis.com/css2?family=Kalam&display=swap", '' , '1.0', 'all' );
 
-    wp_enqueue_style( 'estilos', get_stylesheet_uri(), array('bootstrap', 'montserrat'), '1.0', 'all');
+    wp_enqueue_style( 'estilos', get_stylesheet_uri(), array('bootstrap', 'josefine', 'indie','kalam'), '1.0', 'all');
     
     wp_register_script( 'popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js', '', '2.11.6', true );
 
@@ -51,14 +53,7 @@ add_action( 'wp_enqueue_scripts', 'dcms_load_dashicons_front_end' );
 function dcms_load_dashicons_front_end() {
 	wp_enqueue_style( 'dashicons' );
 }
-add_action("wp_enqueue_scripts", "dcms_insertar_google_fonts");
 
-function dcms_insertar_google_fonts(){
-    $url1 = "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap";
-    wp_enqueue_style('google_fonts', $url1);
-    $url2 = "https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap";
-    wp_enqueue_style('google_fonts', $url2);
- }
 
 function tratamientos_type(){
     $label1 = array(
