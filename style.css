@@ -18,7 +18,6 @@ body{
 }
 a,h1,h2,h3,h4,p,span{
     font-family: 'Josefin Sans', sans-serif;
-
 }
 .attachment-large{
     max-width:100%;
@@ -28,10 +27,12 @@ h1{
     margin:50px 0;
     font-weight: 900;
 }
+h2{
+    margin: 0 0 10px 0!important;
+}
 ul{
     margin-bottom: 0px;  
 }
-
 header .container-menu ul{
     display: flex;
     align-items: center;
@@ -51,13 +52,13 @@ header nav li {
     margin-right: 30px;
 }
 header nav li a{
-    color:#f09927;;
+    color:black;
     font-weight:300;
     text-decoration: none;
     font-family: 'Indie Flower', cursive;
 }
 header nav li a:hover{
-    color:rgb(5, 5, 5);
+    color:#f09927;
     text-shadow: rgba(240, 236, 231, 0.855) 1px 0 10px;
 }
 footer{
@@ -77,6 +78,7 @@ footer p{
     border-radius: 40px;
     width: 120px;
     height: 120px;
+    margin-top: 10px;
 }
 .links{
     display: flex;
@@ -97,14 +99,6 @@ footer p{
     color: white;
     margin-right: 10px;
 }
-#img-tratamiento figure img{
-    border-radius: 20px;
-}
-.nosotros img{
-    width: 500px;
-    height: 300px;
-    align-self: flex-end;
-}
 .nosotros{
     margin: 0;
 }
@@ -112,26 +106,53 @@ footer p{
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color:sandybrown;
-    padding-bottom: 95px;
+    background-color:rgba(244, 165, 96, 0.666);
+    padding-bottom: 62px;
     padding-left: 140px;
     padding-right: 180px;
     padding-top: 62px;
+    height: fit-content;
 }
 .nosotros-desc p{
     font-size: 18px;
 }
 .nosotros-img{
     margin-left: -122px;
-    margin-top: 162px;
     margin-right: 0;
     padding-left: 60px;
     padding-top: 64px;
     padding-bottom: 148px;
-    padding-right: 15px;
     width: 536px;
-    
 }
-h2{
-    margin: 0 0 10px 0!important;
+.nosotros-img img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.tratamientos{
+    margin: 0;
+}
+.tratamientos-carrusel{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    padding-bottom: 62px;
+    padding-right: 180px;
+    padding-top: 62px;
+    height: fit-content;
+  
+}
+.tratamientos-desc{
+    margin-top: 140px;
+    margin-left: -300px;
+    margin-right: 0;
+    padding-left: 150px;
+    padding-top: 64px;
+    padding-bottom: 148px;
+    width: 536px;
+    background-color:rgba(244, 165, 96, 0.666);
+    height: fit-content;  
+    vertical-align: middle;
+    font-family: 'Josefin Sans', sans-serif;
 }
