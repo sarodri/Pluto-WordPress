@@ -55,15 +55,15 @@ function dcms_load_dashicons_front_end() {
 }
 
 
-function tratamientos_type(){
+function blog_type(){
     $label1 = array(
-        'name' => 'Tratamientos',
-        'singular_name' => 'Tratamiento',
-        'menu_name' => 'Tratamientos'
+        'name' => 'Blog',
+        'singular_name' => 'Blog',
+        'menu_name' => 'Blog'
     );
     $args = array(
-        'label' => 'Tratamientos',
-        'description' => 'Tratamientos y servicios',
+        'label' => 'Blog',
+        'description' => 'Blog de novedades',
         'labels' =>  $label1,
         'supports' => array('title', 'editor', 'thumbnail', 'revision'),
         'public' => true,
@@ -76,6 +76,6 @@ function tratamientos_type(){
         'show_in_rest' => true
 
     );
-    register_post_type( 'tratamiento', $args);
+    register_post_type( 'blog', $args);
 };
-add_action('init', 'tratamientos_type' );
+add_action('init', 'blog_type' );

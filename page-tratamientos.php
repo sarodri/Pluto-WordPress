@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class='container my-3' id="tratamientos">
+<main class='container my-3' id="blog">
      <?php if (have_posts()) {
         while(have_posts(  )){
             the_post(); ?>

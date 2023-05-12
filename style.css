@@ -33,6 +33,9 @@ h2{
 ul{
     margin-bottom: 0px;  
 }
+header{
+    border-bottom: 1px solid #a6a5a4;;
+}
 header .container-menu ul{
     display: flex;
     align-items: center;
@@ -46,16 +49,13 @@ header nav {
 }
 header nav li {
     text-transform:uppercase;
-    font-size: 22px;
-    width: auto;
+    font-size: 18px;
     display:inline;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 header nav li a{
     color:black;
-    font-weight:300;
     text-decoration: none;
-    font-family: 'Indie Flower', cursive;
 }
 header nav li a:hover{
     color:#f09927;
@@ -71,7 +71,6 @@ footer{
     vertical-align: baseline;
 }
 footer p{
-    color: rgb(252, 252, 252);  
     font-size: 20px;
 }
 .logo h3{
@@ -93,12 +92,16 @@ footer p{
 }
 .dashicons {
     font-size: 30px;
-    color: white;
+    color: black;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 .legal p{
     margin: 0!important;
+}
+.legal a{
+    text-decoration: none;
+    color: white;
 }
 .nosotros{
     margin: 0;
@@ -108,6 +111,7 @@ footer p{
     flex-direction: column;
     flex: 1;
     background-color:rgba(244, 165, 96, 0.666);
+    border-radius: 8px;
     padding-bottom: 62px;
     padding-left: 140px;
     padding-right: 180px;
@@ -140,12 +144,11 @@ footer p{
     margin: 0;
     padding-bottom: 62px;
     padding-right: 180px;
-    padding-top: 62px;
     height: fit-content;
   
 }
 .tratamientos-desc{
-    margin-top: 140px;
+    margin-top: 80px;
     margin-left: -300px;
     margin-right: 0;
     padding-left: 150px;
@@ -153,7 +156,11 @@ footer p{
     padding-bottom: 148px;
     width: 536px;
     background-color:rgba(244, 165, 96, 0.666);
+    border-radius: 8px;
     height: fit-content;  
     vertical-align: middle;
     font-family: 'Josefin Sans', sans-serif;
+}
+.master-slider-parent{
+    margin-left: 0!important;
 }
