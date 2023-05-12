@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-2" id="logo">
-                <img src="<?php echo get_template_directory_uri()?>/assets/img/logo.png" alt="logo">
+                <img src="<?php echo get_template_directory_uri()?>/assets/img/pluto-logo.png" alt="logo">
             </div>
             
             <div class="col-10"> 

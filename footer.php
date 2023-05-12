@@ -2,7 +2,7 @@
     <div class="container">
      <!-- <?php dynamic_sidebar( 'footer' )?> -->
         <div class="logo">
-            <img src="<?php echo get_template_directory_uri()?>/assets/img/pluto.png" alt="logo">
+            <h3>Peluquería canina y spa Pluto</h3>
         
             <div class="links">
                 <a href="https://www.instagram.com/peluqueriacaninayspapluto/" target="_blank" alt="instagram" ><span class="dashicons dashicons-instagram"></span></a>
