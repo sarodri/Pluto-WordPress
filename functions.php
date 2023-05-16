@@ -30,6 +30,11 @@ function assets(){
     wp_enqueue_script('custom',get_template_directory_uri().'/assets/js/custom.js','','1.0.0',true);
 
     wp_enqueue_script('jquery');
+
+    wp_localize_script('custom','blog', array(
+        // 'ajaxurl' => admin_url('admin-ajax.php'),
+        'apiurl' => home_url('/wp-json/blog/v1/')
+    ));
 };
 
 add_action( 'wp_enqueue_scripts', 'assets');
@@ -54,28 +59,44 @@ function dcms_load_dashicons_front_end() {
 	wp_enqueue_style( 'dashicons' );
 }
 
-
-function blog_type(){
-    $label1 = array(
-        'name' => 'Blog',
-        'singular_name' => 'Blog',
-        'menu_name' => 'Blog'
+add_action('rest_api_init', function(){
+    register_rest_route(
+        'blog/v1', 
+        'novedades', 
+        array(
+            'methods' => 'GET',
+            'callback' => 'novedadesBlog',
+        )
     );
-    $args = array(
-        'label' => 'Blog',
-        'description' => 'Blog de novedades',
-        'labels' =>  $label1,
-        'supports' => array('title', 'editor', 'thumbnail', 'revision'),
-        'public' => true,
-        'show_in_menu' => true,
-        'menu_position' => 5,
-        'menu_icon' => 'dashicons-category',
-        'can_export' => true,
-        'publicly_querable' => true,
-        'rewrite' => true,
-        'show_in_rest' => true
+});
 
-    );
-    register_post_type( 'blog', $args);
-};
-add_action('init', 'blog_type' );
+function novedadesBlog(){
+    $args= array(
+            'post_type'=> 'post',
+            'post_per_page'=> -1,
+            'order'=> 'ASC',
+            'orderby'   => array(
+                'date' =>'DESC',
+                'menu_order'=>'ASC',
+               )
+        );
+              
+        $novedades = new WP_Query($args);
+
+        if ($novedades->have_posts()){
+            $return = array();
+            while($novedades->have_posts()){
+                $novedades->the_post();
+                $return[] = array(
+                    'titulo' => get_the_title(),
+                    'contenido' => get_the_content()
+                );
+            }
+        }
+            else {
+                return null;
+            }
+           
+            return $return;
+}
+

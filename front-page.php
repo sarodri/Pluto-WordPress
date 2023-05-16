@@ -37,34 +37,6 @@
                 <li>Y más...</li>
             </ul>
         </div>
-     
-        
-    
-        <!-- <div class="row my-3" id="tratamientos">
-        <?php 
-        $args = array(
-            'post_type' => 'tratamiento',
-            'post_per_page' => -1,  
-            'order' => 'ASC',
-            'order_by' => 'title'  
-        );
-        $tratamientos = new WP_Query($args);
-        
-        if($tratamientos->have_posts()){
-            while($tratamientos ->have_posts()){
-                $tratamientos-> the_post();
-        ?>
-                <div class="col-md-4 col-12 my-3 text-center" id="img-tratamiento">
-                    <figure>
-                        <?php the_post_thumbnail('medium'); ?>
-                    </figure>
-                    <h6 class="my-3 text-center">
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </h6>
-                </div>
-        <?php } 
-        } ?>
-        </div> -->
     </div>
 </main>
 

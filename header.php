@@ -28,4 +28,3 @@
     </div>
 </header>
 
-<!-- <lord-icon        src="https://cdn.lordicon.com/xwdnglcb.json"     trigger="hover"     colors="outline:#121331,primary:#646e78"     stroke="55"     style="width:100px;height:100px"> </lord-icon> -->

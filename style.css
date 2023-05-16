@@ -164,3 +164,9 @@ footer p{
 .master-slider-parent{
     margin-left: 0!important;
 }
+.wpforms-form {
+    background-color:rgba(244, 165, 96, 0.317)!important;
+    padding: 20px 15px !important;
+    border-radius: 20px !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+}

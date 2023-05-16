@@ -1,6 +1,5 @@
 <footer>
     <div class="container">
-     <!-- <?php dynamic_sidebar( 'footer' )?> -->
         <div class="logo">   
             <h3>Peluquería canina y spa Pluto</h3> 
              <div class="links">
