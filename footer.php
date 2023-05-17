@@ -1,7 +1,8 @@
 <footer>
     <div class="container">
         <div class="logo">   
-            <h3>Peluquería canina y spa Pluto</h3> 
+            <h4>Peluquería canina y spa Pluto</h4> 
+            <img src="<?php echo get_template_directory_uri()?>/assets/img/logo-footer.jpg" alt="logo-footer">
              <div class="links">
                 <a href="https://www.instagram.com/peluqueriacaninayspapluto/" target="_blank" alt="instagram" ><span class="dashicons dashicons-instagram"></span></a>
                 <a href="https://www.facebook.com/peluqueriacaninayspapluto" target="_blank" alt="facebook"><span class="dashicons dashicons-facebook"></span></a>

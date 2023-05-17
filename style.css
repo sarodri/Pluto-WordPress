@@ -35,6 +35,13 @@ ul{
 header{
     border-bottom: 1px solid #a6a5a4;;
 }
+header h4{
+    font-size: 1.2rem!important;
+    color: #f6bf78;
+    text-shadow: rgb(72, 40, 1) 0.1em 0.1em 0em;
+    margin-bottom: 0!important;
+   
+}
 header .container-menu ul{
     display: flex;
     align-items: center;
@@ -60,6 +67,9 @@ header nav li a:hover{
     color:#f09927;
     text-shadow: rgba(240, 236, 231, 0.855) 1px 0 10px;
 }
+#logo img{
+    border-radius: 50px;
+}
 footer{
     background-color:#a6a5a4;
     width: 100%;
@@ -72,9 +82,12 @@ footer{
 footer p{
     font-size: 20px;
 }
-.logo h3{
+.logo h4{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+footer img{
+    border-radius: 50px;
 }
 .links{
     display: flex;
