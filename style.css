@@ -25,7 +25,6 @@ a,h1,h2,h3,h4,p,span{
 }
 h1{
     margin:50px 0;
-    font-weight: 900;
 }
 h2{
     margin: 0 0 10px 0!important;
@@ -169,4 +168,12 @@ footer p{
     padding: 20px 15px !important;
     border-radius: 20px !important;
     font-family: 'Josefin Sans', sans-serif !important;
+}
+.novedades figure{
+    display: flex!important;
+    justify-content: center;
+}
+.novedades figure img{
+    width: 400px;
+    height: 250px;
 }

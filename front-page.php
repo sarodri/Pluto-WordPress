@@ -11,13 +11,11 @@
                 <?php the_content( ); ?>
                 <?php   }
                 }?>
-            </p>
-             
+            </p>    
         </div>
         <div class="nosotros-img">
             <img src="<?php echo get_template_directory_uri()?>/assets/img/fachada.jpeg" alt="sobre-nosotros">
         </div>
-
     </div>
     <div class="tratamientos d-flex">
         <div class="tratamientos-carrusel">

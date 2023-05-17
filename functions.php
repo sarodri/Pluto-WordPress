@@ -3,12 +3,9 @@
 function init_template(){
     add_theme_support('post-thumbnails');
     add_theme_support( 'title-tag');
-
     register_nav_menus( array('top_menu' => 'Menu principal') );
 };
-
 add_action('after_setup_theme', 'init_template');
-
 function my_theme_styles() {
     wp_enqueue_style( 'dashicons' );
     }
@@ -32,13 +29,10 @@ function assets(){
     wp_enqueue_script('jquery');
 
     wp_localize_script('custom','blog', array(
-        // 'ajaxurl' => admin_url('admin-ajax.php'),
         'apiurl' => home_url('/wp-json/blog/v1/')
     ));
 };
-
 add_action( 'wp_enqueue_scripts', 'assets');
-
 function sidebar(){
 
     register_sidebar( array(
@@ -52,13 +46,10 @@ function sidebar(){
     ) );
 };
 add_action( 'widgets_init','sidebar');
-
 add_action( 'wp_enqueue_scripts', 'dcms_load_dashicons_front_end' );
-
 function dcms_load_dashicons_front_end() {
 	wp_enqueue_style( 'dashicons' );
 }
-
 add_action('rest_api_init', function(){
     register_rest_route(
         'blog/v1', 
@@ -69,16 +60,12 @@ add_action('rest_api_init', function(){
         )
     );
 });
-
 function novedadesBlog(){
     $args= array(
             'post_type'=> 'post',
-            'post_per_page'=> -1,
-            'order'=> 'ASC',
-            'orderby'   => array(
-                'date' =>'DESC',
-                'menu_order'=>'ASC',
-               )
+            'post_per_page'=> 10,
+            'order'=> 'DESC',
+            'orderby'   => 'fecha'
         );
               
         $novedades = new WP_Query($args);
@@ -88,6 +75,7 @@ function novedadesBlog(){
             while($novedades->have_posts()){
                 $novedades->the_post();
                 $return[] = array(
+                    'fecha' => get_the_date(),
                     'titulo' => get_the_title(),
                     'contenido' => get_the_content()
                 );

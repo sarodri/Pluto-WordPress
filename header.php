@@ -14,7 +14,6 @@
             <div class="col-2" id="logo">
                 <img src="<?php echo get_template_directory_uri()?>/assets/img/pluto-logo.png" alt="logo">
             </div>
-            
             <div class="col-10"> 
                  <nav>
                     <?php wp_nav_menu( array(
