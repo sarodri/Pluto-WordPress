@@ -190,3 +190,12 @@ footer img{
     width: 400px;
     height: 250px;
 }
+
+@media screen and (max-width: 1201px){
+    .nosotros-img{
+        display: none;
+    }
+    header h4{
+        display: none;
+    }
+}
