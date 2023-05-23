@@ -17,9 +17,10 @@
             <img src="<?php echo get_template_directory_uri()?>/assets/img/fachada.jpeg" alt="sobre-nosotros">
         </div>
     </div>
+       
     <div class="tratamientos d-flex">
-        <div class="tratamientos-carrusel">
-            <?php masterslider(1); ?>
+        <div class="tratamientos-img">
+            <img src="<?php echo get_template_directory_uri()?>/assets/img/interior.jpeg" alt="interior">
         </div>
         <div class="tratamientos-desc">
             <h2>Nuestros servicios</h2>
@@ -36,6 +37,7 @@
             </ul>
         </div>
     </div>
+    <?php echo do_shortcode('[sp_wpcarousel id="118"]'); ?>
 </main>
 
 <?php get_footer(); ?>
