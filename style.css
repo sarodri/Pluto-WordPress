@@ -13,7 +13,6 @@ html {
     position: relative;
 }
 body{
-    padding-bottom: 10%;
     background-color:white;
 }
 a,h1,h2,h3,h4,p,span{
@@ -76,6 +75,19 @@ header nav li a:hover{
 #logo img{
     border-radius: 50px;
     margin-bottom: 10px;
+}
+.contacto{
+    background-color:rgba(244, 165, 96, 0.317);
+    padding: 8px 0 8px 10px;
+    border-radius: 20px ;
+    text-align: center;
+    justify-content: center;
+}
+.contacto p{
+    margin: 0 !important;
+}
+.my-5.contacta{
+    text-align: center!important;
 }
 footer{
     background-color:#a6a5a4;
